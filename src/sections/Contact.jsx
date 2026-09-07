@@ -19,10 +19,10 @@ const contactMethods = [
   },
   {
     icon: Globe,
-    label: 'وب‌سایت',
-    value: 'zelvoagency.ir',
-    href: 'https://zelvoagency.ir',
-    cta: 'مشاهده وب‌سایت'
+    label: 'نمونه‌کارها',
+    value: 'ishantia.ir',
+    href: 'https://ishantia.ir',
+    cta: 'مشاهده پورتفولیو'
   }
 ]
 

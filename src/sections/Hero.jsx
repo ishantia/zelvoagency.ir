@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="home" className="relative overflow-hidden pt-40 pb-24 sm:pt-48 sm:pb-32">
       {/* Background: subtle grid + glow, decorative only */}
       <div className="pointer-events-none absolute inset-0 -z-10 bg-grid [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,#000_10%,transparent_75%)]" aria-hidden="true" />
-      <div className="pointer-events-none absolute -top-32 start-1/2 -z-10 h-[520px] w-[520px] -translate-x-1/2 glow-orb opacity-60" aria-hidden="true" />
+      <div className="pointer-events-none absolute -top-32 left-1/2 -z-10 h-[520px] w-[520px] -translate-x-1/2 glow-orb opacity-60" aria-hidden="true" />
 
       <div className="container-content grid grid-cols-1 items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
         {/* Text content */}
@@ -88,7 +88,7 @@ export default function Hero() {
             </svg>
 
             {/* Floating UI / code card */}
-            <div className="absolute start-1/2 top-1/2 w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-border bg-surface/90 p-4 shadow-glow backdrop-blur-sm">
+            <div className="absolute left-1/2 top-1/2 w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-border bg-surface/90 p-4 shadow-glow backdrop-blur-sm">
               <div className="mb-3 flex items-center gap-1.5" aria-hidden="true">
                 <span className="h-2.5 w-2.5 rounded-full bg-[#ef4444]/70" />
                 <span className="h-2.5 w-2.5 rounded-full bg-[#eab308]/70" />

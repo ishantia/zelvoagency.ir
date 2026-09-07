@@ -67,8 +67,8 @@ export default function MenuMockup() {
                   <p className="truncate text-sm font-semibold text-ink">{item.name}</p>
                   <p className="truncate text-xs text-muted">{item.desc}</p>
                 </div>
-                <p className="shrink-0 text-xs font-bold text-light" dir="ltr">
-                  {item.price}
+                <p className="shrink-0 text-xs font-bold text-light" dir="rtl">
+                  {item.price} <span className="text-[10px] font-medium opacity-80">تومان</span>
                 </p>
               </div>
             ))}

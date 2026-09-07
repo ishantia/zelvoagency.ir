@@ -30,7 +30,7 @@ export default function Button({
   )
 
   if (href) {
-    const isExternal = href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:')
+    const isExternal = href.startsWith('http')
     return (
       <a
         href={href}

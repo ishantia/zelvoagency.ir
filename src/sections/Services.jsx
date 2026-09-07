@@ -11,7 +11,7 @@ export default function Services() {
           description="از طراحی وب‌سایت شرکتی تا منوی آنلاین اختصاصی؛ هر پروژه با فناوری‌های مدرن و متناسب با نیاز واقعی کسب‌وکار شما ساخته می‌شود."
         />
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <ServiceCard key={service.id} service={service} delay={(index % 3) * 90} />
           ))}

@@ -27,7 +27,7 @@ const shareChannels = ['واتساپ', 'تلگرام', 'بیو اینستاگر�
 export default function OnlineMenu() {
   return (
     <section id="online-menu" className="relative overflow-hidden py-24 sm:py-32">
-      <div className="pointer-events-none absolute top-1/3 end-0 -z-10 h-[420px] w-[420px] translate-x-1/3 glow-orb opacity-40" aria-hidden="true" />
+      <div className="pointer-events-none absolute top-1/3 left-0 -z-10 h-[420px] w-[420px] -translate-x-1/3 glow-orb opacity-40" aria-hidden="true" />
 
       <div className="container-content grid grid-cols-1 items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="flex flex-col gap-8 lg:order-1">

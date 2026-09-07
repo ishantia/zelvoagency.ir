@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
+import TelegramVpnWrapper from './components/TelegramVpnWrapper.jsx'
 import Hero from './sections/Hero.jsx'
 import Services from './sections/Services.jsx'
 import WhyZelvo from './sections/WhyZelvo.jsx'
@@ -37,6 +38,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <TelegramVpnWrapper />
     </>
   )
 }

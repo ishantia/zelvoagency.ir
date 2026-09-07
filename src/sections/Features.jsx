@@ -16,9 +16,7 @@ export default function Features() {
             <Reveal
               key={feature.title}
               delay={(index % 4) * 80}
-              className={`flex flex-col justify-between gap-6 rounded-2xl border border-border bg-surface/60 p-6 transition-colors duration-300 hover:border-secondary/40 ${
-                feature.size === 'large' ? 'sm:col-span-2' : ''
-              }`}
+              className="flex flex-col justify-between gap-6 rounded-2xl border border-border bg-surface/60 p-6 transition-colors duration-300 hover:border-secondary/40"
             >
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-light">
                 <feature.icon className="h-5 w-5" aria-hidden="true" />

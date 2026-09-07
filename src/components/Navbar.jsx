@@ -16,6 +16,16 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024 && isMenuOpen) {
+        setIsMenuOpen(false)
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [isMenuOpen])
+
+  useEffect(() => {
     document.body.style.overflow = isMenuOpen ? 'hidden' : ''
     return () => {
       document.body.style.overflow = ''
@@ -64,7 +74,7 @@ export default function Navbar() {
       <div
         id="mobile-menu"
         className={`overflow-hidden border-b border-border bg-bg/98 backdrop-blur-lg transition-all duration-300 ease-in-out lg:hidden ${
-          isMenuOpen ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0'
+          isMenuOpen ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none invisible'
         }`}
       >
         <nav className="container-content flex flex-col gap-1 py-4" aria-label="ناوبری موبایل">
