@@ -12,7 +12,6 @@ export default function useInView({ threshold = 0.16, rootMargin = '0px 0px -8% 
     const node = ref.current
     if (!node) return
 
-    // اگر کاربر انیمیشن کاهش‌یافته را ترجیح می‌دهد، مستقیم نمایش بده
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (prefersReduced) {
       setIsVisible(true)

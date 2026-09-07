@@ -1,9 +1,5 @@
 import { useEffect, useState } from 'react'
 
-/**
- * این کامپوننت کلیک‌ها به آدرس t.me را متوقف می‌کند
- * و پیامی برای اطمینان از روشن بودن فیلترشکن به کاربر نشان می‌دهد.
- */
 export default function TelegramVpnWrapper() {
   const [pendingUrl, setPendingUrl] = useState(null)
 
